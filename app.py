@@ -25,4 +25,4 @@ def chat():
 
 if __name__ == "__main__":
     print("Open http://localhost:8000")
-    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 7860)))
