@@ -12,7 +12,7 @@ CHROMA_PATH = "./chroma_db"
 COLLECTION_NAME = "profile_assistant"
 
 def get_query_engine():
-    Settings.embed_model = HuggingFaceEmbedding(model_name="all-MiniLM-L6-v2")
+    Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5", device="cpu", embed_batch_size=1)
     Settings.llm = Groq(
         model="llama-3.3-70b-versatile",
         api_key=os.getenv("GROQ_API_KEY")
