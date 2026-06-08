@@ -20,8 +20,9 @@ RUN pip install --no-cache-dir \
     pypdf==4.2.0 \
     python-docx==1.1.2 \
     sentence-transformers==2.7.0 \
-    transformers==4.36.2 \
-    tokenizers==0.15.2
+    transformers==4.37.2 \
+    tokenizers==0.15.2 \
+    huggingface-hub==0.23.4
 
 COPY . .
 
