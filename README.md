@@ -2,7 +2,7 @@
 title: Profile AI Assistant
 emoji: 🤖
 colorFrom: gray
-colorTo: white
+colorTo: gray
 sdk: docker
 pinned: false
 ---
