@@ -1,3 +1,12 @@
+---
+title: Profile AI Assistant
+emoji: 🤖
+colorFrom: gray
+colorTo: white
+sdk: docker
+pinned: false
+---
+
 # 🤖 Personal Profile Assistant
 
 An AI-powered RAG (Retrieval-Augmented Generation) chatbot that answers questions about my professional background using my LinkedIn profile and resume as knowledge sources.
