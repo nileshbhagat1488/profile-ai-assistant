@@ -22,7 +22,8 @@ RUN pip install --no-cache-dir \
     sentence-transformers==2.7.0 \
     transformers==4.37.2 \
     tokenizers==0.15.2 \
-    huggingface-hub==0.23.4
+    huggingface-hub==0.23.4 \
+    llama-index-readers-file==0.1.30
 
 COPY . .
 
