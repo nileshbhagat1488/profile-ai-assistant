@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nilesh Bhagat — Profile Assistant</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile-card">
+        <img src="/static/profile.png" alt="Nilesh Bhagat" class="profile-img"/>
+        <h2 class="profile-name">Nilesh Bhagat</h2>
+        <p class="profile-title">Senior Data Engineer</p>
+        <div class="divider"></div>
+
+        <!-- Stats -->
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Years in IT Industry</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Years in Data Engineering</span>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Domains -->
+        <div class="domains">
+          <p class="section-label">Domain Expertise</p>
+          <span class="tag">Actuarial Analytics</span>
+          <span class="tag">Banking</span>
+          <span class="tag">Oil & Gas</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Quick Questions -->
+        <div class="quick">
+          <p class="section-label">Quick Questions</p>
+          <button onclick="fillInput('What are Nilesh\'s top technical skills?')">Top Skills</button>
+          <button onclick="fillInput('Summarize Nilesh\'s work experience')">Experience</button>
+          <button onclick="fillInput('What certifications does Nilesh have?')">Certifications</button>
+          <button onclick="fillInput('What projects has Nilesh worked on?')">Projects</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT CHAT PANEL -->
+    <main class="chat-panel">
+      <div class="chat-header">
+        <div>
+          <h1>Profile Assistant</h1>
+          <p>Ask me anything about Nilesh's professional background</p>
+        </div>
+        <div class="online-dot"><span></span> Online</div>
+      </div>
+
+      <div class="chat-window" id="chatWindow">
+        <div class="message assistant">
+          <div class="bubble">
+            👋 Hi! I'm Nilesh's AI profile assistant. Ask me about his skills, experience, certifications, or projects.
+          </div>
+        </div>
+      </div>
+
+      <div class="input-area">
+        <input type="text" id="userInput"
+          placeholder="Ask something about Nilesh..."
+          autocomplete="off"/>
+        <button id="sendBtn" onclick="sendMessage()">
+          Send ➤
+        </button>
+      </div>
+    </main>
+
+  </div>
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>
